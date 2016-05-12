@@ -1,7 +1,7 @@
 {
   "name": "zglog-adapter",
   "version": "0.0.1",
-  "description": "",
+  "description": "log http request responses and get the logged messages",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
