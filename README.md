@@ -10,7 +10,8 @@ zglog-adapter is build to use in enoa-client for the purpose of logging the http
 npm install zglog-adapter
 
 ## Usage
-for express inlcude app.use(//client)
+As this adapter is built to use for enoa-client include it in the client, after include it as a middleware for express framework e.g. app.use(client.log()).
+if you want to log manually requests just call the function client.log(params) and pass request and response objects as parameters.
 
 ## License
 MIT
