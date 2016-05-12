@@ -1,0 +1,24 @@
+{
+  "name": "zglog-adapter",
+  "version": "0.0.1",
+  "description": "provides the functionality to log http request response",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Emallates/zglog-adapter.git"
+  },
+  "keywords": [
+    "zglog",
+    "logger",
+    "analytics"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Emallates/zglog-adapter/issues"
+  },
+  "homepage": "https://github.com/Emallates/zglog-adapter#readme"
+}
