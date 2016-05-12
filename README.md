@@ -10,11 +10,13 @@ zglog-adapter is build to use in enoa-client for the purpose of logging the http
 npm install zglog-adapter
 
 ##FEATURES
-1. log
-2. find
-3. getmessages
-4. getTerms
-5. getClasses
+1. LOG MESSAGES
+2. GET LOGGED MESSAGES
+3. GET CREATED TERMS
+4. GET CREATED CLASSES
+5. GET HISTORY
+
+
 #####Note: in this version log function is availible
 
 ## Usage
