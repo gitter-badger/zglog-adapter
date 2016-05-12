@@ -1,14 +1,14 @@
 # zglog-adapter
 
-TODO:zglog-adapter is build to use in enoa-client for the purpose of logging the http requests and response
+zglog-adapter is build to use in enoa-client for the purpose of logging the http requests and response
 
 ## Installation
 
-TODO: Describe the installation process
+npm install zglog-adapter
+include it in enoa-client
 
 ## Usage
-
-TODO: Write usage instructions
+for express inlcude app.use(//client)
 
 ## Contributing
 
@@ -18,14 +18,6 @@ TODO: Write usage instructions
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
-## History
-
-TODO: Write history
-
-## Credits
-
-TODO: Write credits
-
 ## License
 
-TODO: Write license
+MIT
