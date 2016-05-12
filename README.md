@@ -1,6 +1,6 @@
-# Project Name
+# zglog-adapter
 
-TODO: Write a project description
+TODO:zglog-adapter is build to use in enoa-client for the purpose of logging the http requests and response
 
 ## Installation
 
