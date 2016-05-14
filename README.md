@@ -1,14 +1,14 @@
 # zglog-adapter
 [![Version][version-svg]][package-url] [![Build Status][travis-svg]][travis-url] [![License][license-image]][license-url]  [![Downloads][downloads-image]][downloads-url]
 
-[version-svg]: https://img.shields.io/npm/v/gulp-task-builder.svg?style=flat-square
-[package-url]: https://npmjs.org/package/gulp-task-builder
+[version-svg]:https://img.shields.io/npm/v/zglog-adapter.svg?style=flat-square
+[package-url]: https://www.npmjs.com/package/zglog-adapter
 [travis-svg]: https://img.shields.io/travis/Emallates/gulp-task-builder/master.svg?style=flat-square
 [travis-url]: https://api.travis-ci.org/Emallates/gulp-task-builder.svg?branch=master
 [license-image]: https://img.shields.io/badge/license-MIT-green.svg?style=flat-square
 [license-url]: LICENSE.txt
-[downloads-image]: https://img.shields.io/npm/dm/gulp-task-builder.svg?style=flat-square
-[downloads-url]: http://npm-stat.com/charts.html?package=gulp-task-builder
+[downloads-image]: https://img.shields.io/npm/dm/zglog-adapter.svg?style=flat-square
+[downloads-url]: http://npm-stat.com/charts.html?package=zglog-adapter
 
 ##DESCRIPTION
 zglog-adapter is build to use in enoa-client for the purpose of logging the http request, response and get the logged messages, terms, or analytics related to terms.
