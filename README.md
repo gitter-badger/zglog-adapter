@@ -19,12 +19,16 @@ zglog-adapter is just for experminetal purposes for [enoa-client](https://github
 >
 
 ## Table of Contents
-1. [Installation](#installation)
-2. [Configuration](#configuration)
-3. [Overview](#overview)
-4. [Issues or Suggestions](#issues-or-suggestions)
-5. [License](#license)
+1. [Prerequisites](#prerequisites)
+2. [Installation](#installation)
+3. [Configuration](#configuration)
+4. [Overview](#overview)
+5. [Issues or Suggestions](#issues-or-suggestions)
+6. [License](#license)
 
+
+## Prerequisites
+Clients should be registered with the regarding service
 
 ## Installation
 
@@ -58,14 +62,14 @@ var config = {
 
 ## Overview
 
-### Features
+#### Features
 LOG MESSAGES</br>
 GET LOGGED MESSAGES</br>
 GET CREATED TERMS</br>
 GET CREATED CLASSES</br>
 GET HISTORY</br>
 
-### Methods
+#### Methods
  <b>register</b></br>
  <b>log</b></br>
  <b>find</b></br>
