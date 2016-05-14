@@ -1,5 +1,5 @@
 # zglog-adapter
-[![Version][version-svg]:(https://img.shields.io/npm/v/zglog-adapter.svg?style=flat-square)
+[![version-svg]:(https://img.shields.io/npm/v/zglog-adapter.svg?style=flat-square)
 
 ##DESCRIPTION
 zglog-adapter is build to use in enoa-client for the purpose of logging the http request, response and get the logged messages, terms, or analytics related to terms.
