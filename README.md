@@ -76,8 +76,14 @@ var config = {
 2. log
 3. find
 
+> **Note**
+>
+> advance functions will be included after a while, this will give you the overview  for >[enoa-client](https://github.com/Emallates/enoa-client) adapters and the functions related to the specific service.
+>  
+>
+
 ## Issues or Suggestions
-As zglog-adapter is just an experimantal adapter for [enoa-client](https://github.com/Emallates/enoa-client), anybody who can build or contribute a better one is welcome.
+As zglog-adapter is just an experimantal adapter for [enoa-client](https://github.com/Emallates/enoa-client), anybody who can build or contribute is welcome.
 
 
 ## License
