@@ -3,7 +3,7 @@
 
 [version-svg]:https://img.shields.io/npm/v/zglog-adapter.svg?style=flat-square
 [package-url]: https://www.npmjs.com/package/zglog-adapter
-[travis-svg]: https://img.shields.io/travis/Emallates/gulp-task-builder/master.svg?style=flat-square
+[travis-svg]: https://img.shields.io/travis/Emallates/zglog-adapter/master.svg?style=flat-square
 [travis-url]: https://api.travis-ci.org/Emallates/gulp-task-builder.svg?branch=master
 [license-image]: https://img.shields.io/badge/license-MIT-green.svg?style=flat-square
 [license-url]: LICENSE.txt
