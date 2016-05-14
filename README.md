@@ -10,26 +10,90 @@
 [downloads-image]: https://img.shields.io/npm/dm/zglog-adapter.svg?style=flat-square
 [downloads-url]: http://npm-stat.com/charts.html?package=zglog-adapter
 
-##DESCRIPTION
-zglog-adapter is build to use in enoa-client for the purpose of logging the http request, response and get the logged messages, terms, or analytics related to terms.
+# Project Title
 
-## Installation
+One Paragraph of project description goes here
 
-npm install zglog-adapter
+## Getting Started
 
-##FEATURES
-1. LOG MESSAGES
-2. GET LOGGED MESSAGES
-3. GET CREATED TERMS
-4. GET CREATED CLASSES
-5. GET HISTORY
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
+### Prerequisities
 
-#####Note: in this version log function is availible
+What things you need to install the software and how to install them
 
-## Usage
-As this adapter is built to use for enoa-client include it in the client, after include it as a middleware for express framework e.g. app.use(client.log()).
-if you want to log manually requests just call the function client.log(params) and pass request and response objects as parameters.
+```
+Give examples
+```
+
+### Installing
+
+A step by step series of examples that tell you have to get a development env running
+
+Stay what the step will be
+
+```
+Give the example
+```
+
+And repeat
+
+```
+until finished
+```
+
+End with an example of getting some data out of the system or using it for a little demo
+
+## Running the tests
+
+Explain how to run the automated tests for this system
+
+### Break down into end to end tests
+
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+### And coding style tests
+
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+## Deployment
+
+Add additional notes about how to deploy this on a live system
+
+## Built With
+
+* Dropwizard - Bla bla bla
+* Maven - Maybe
+* Atom - ergaerga
+
+## Contributing
+
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+
+## Authors
+
+* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+
+See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## License
-MIT
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+* Hat tip to anyone who's code was used
+* Inspiration
+* etc
