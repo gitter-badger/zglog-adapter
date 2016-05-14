@@ -10,12 +10,6 @@
 [downloads-image]: https://img.shields.io/npm/dm/zglog-adapter.svg?style=flat-square
 [downloads-url]: http://npm-stat.com/charts.html?package=zglog-adapter
 
-[![npm version](https://badge.fury.io/js/sails-orientdb.svg)](http://badge.fury.io/js/sails-orientdb)
-[![Build Status](https://travis-ci.org/appscot/sails-orientdb.svg?branch=master)](https://travis-ci.org/appscot/sails-orientdb)
-[![Test Coverage](https://codeclimate.com/github/appscot/sails-orientdb/badges/coverage.svg)](https://codeclimate.com/github/appscot/sails-orientdb)
-[![dependencies](https://david-dm.org/appscot/sails-orientdb.svg)](https://david-dm.org/appscot/sails-orientdb)
-[![Gitter](https://img.shields.io/badge/gitter-join%20chat%20%E2%86%92-brightgreen.svg)](https://gitter.im/appscot/sails-orientdb?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
 zglog-adapter is just for experminetal purposes for [enoa-client](https://github.com/Emallates/enoa-client), you can log the http request, response and get the saved logged messages.
 
 > **Note**
