@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/Emallates/zglog-adapter/issues"
   },
-  "homepage": "https://github.com/Emallates/zglog-adapter#readme"
+  "homepage": "https://github.com/Emallates/zglog-adapter#readme",
+  "dependencies": {
+    "request": "^2.72.0"
+  }
 }
