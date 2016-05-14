@@ -59,16 +59,16 @@ var config = {
 ## Overview
 
 ### Features
-1. LOG MESSAGES
-2. GET LOGGED MESSAGES
-3. GET CREATED TERMS
-4. GET CREATED CLASSES
-5. GET HISTORY
+LOG MESSAGES</br>
+GET LOGGED MESSAGES</br>
+GET CREATED TERMS</br>
+GET CREATED CLASSES</br>
+GET HISTORY</br>
 
 ### Methods
-1. register
-2. log
-3. find
+ <b>register</b></br>
+ <b>log</b></br>
+ <b>find</b></br>
 
 > **Note**
 >
