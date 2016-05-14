@@ -10,26 +10,80 @@
 [downloads-image]: https://img.shields.io/npm/dm/zglog-adapter.svg?style=flat-square
 [downloads-url]: http://npm-stat.com/charts.html?package=zglog-adapter
 
-##DESCRIPTION
-zglog-adapter is build to use in enoa-client for the purpose of logging the http request, response and get the logged messages, terms, or analytics related to terms.
+zglog-adapter is just for experminetal purposes for [enoa-client](https://github.com/Emallates/enoa-client), you can log the http request, response and get the saved logged messages.
+
+> **Note**
+>
+> `zglog-adapter` is build for [enoa-client](https://github.com/Emallates/enoa-client) just for experimental purposes.
+>
+>
+
+## Table of Contents
+[Prerequisites](#prerequisites)</br>
+[Installation](#installation)</br>
+[Configuration](#configuration)</br>
+[Overview](#overview)</br>
+[Issues or Suggestions](#issues-or-suggestions)</br>
+[License](#license)
+
+
+## Prerequisites
+Clients should be registered with the regarding service
 
 ## Installation
 
-npm install zglog-adapter
-
-##FEATURES
-1. LOG MESSAGES
-2. GET LOGGED MESSAGES
-3. GET CREATED TERMS
-4. GET CREATED CLASSES
-5. GET HISTORY
+Install stable version from NPM:
+```
+npm install zglog-adapter --save
+```
 
 
-#####Note: in this version log function is availible
+## Configuration
 
-## Usage
-As this adapter is built to use for enoa-client include it in the client, after include it as a middleware for express framework e.g. app.use(client.log()).
-if you want to log manually requests just call the function client.log(params) and pass request and response objects as parameters.
+zglog-adapter can be used with enoa-client, for more information on how to use enoa-client in your App view the [enoa-client](https://github.com/Emallates/enoa-client).
+
+
+### zglog-adapter configuration
+
+####Example
+
+```javascript
+var adapter = require('zglog-adapter');
+var config = {
+	host:'127.0.0.1', 
+	adapter:zgAdapter, 
+	timeout:false, 
+	port:9000,
+	appId:'example_id',
+	apiKey:'example_key'
+};
+```
+
+
+## Overview
+
+#### Features
+LOG MESSAGES</br>
+GET LOGGED MESSAGES</br>
+GET CREATED TERMS</br>
+GET CREATED CLASSES</br>
+GET HISTORY</br>
+
+#### Methods
+ <b>register</b></br>
+ <b>log</b></br>
+ <b>find</b></br>
+
+> **Note**
+>
+> advance functions will be included after a while, this will give you the overview  for >[enoa-client](https://github.com/Emallates/enoa-client) adapters and the functions related to the specific service.
+>  
+>
+
+## Issues or Suggestions
+As zglog-adapter is just an experimantal adapter for [enoa-client](https://github.com/Emallates/enoa-client), anybody who can build or contribute is welcome.
+
 
 ## License
-MIT
+
+**[MIT](./LICENSE)**
