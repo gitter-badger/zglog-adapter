@@ -50,12 +50,12 @@ zglog-adapter can be used with enoa-client, for more information on how to use e
 ```javascript
 var adapter = require('zglog-adapter');
 var config = {
-			host:'127.0.0.1', 
-			adapter:zgAdapter, 
-			timeout:false, 
-			port:9000,
-			appId:'example_id',
-			apiKey:'example_key'
+	host:'127.0.0.1', 
+	adapter:zgAdapter, 
+	timeout:false, 
+	port:9000,
+	appId:'example_id',
+	apiKey:'example_key'
 };
 ```
 
