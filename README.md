@@ -19,12 +19,12 @@ zglog-adapter is just for experminetal purposes for [enoa-client](https://github
 >
 
 ## Table of Contents
-1. [Prerequisites](#prerequisites)
-2. [Installation](#installation)
-3. [Configuration](#configuration)
-4. [Overview](#overview)
-5. [Issues or Suggestions](#issues-or-suggestions)
-6. [License](#license)
+[Prerequisites](#prerequisites)</br>
+[Installation](#installation)</br>
+[Configuration](#configuration)</br>
+[Overview](#overview)</br>
+[Issues or Suggestions](#issues-or-suggestions)</br>
+[License](#license)
 
 
 ## Prerequisites
