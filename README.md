@@ -93,15 +93,13 @@ client.fields_return(fields, callback);
 
 #### Features
 <ul>
-<li>log Messages</li>
-<li>get Messages</li>
-<li>get Terms</li>
-<li>get stats</li>
-<li>get history</li>
+<li><b>log Messages</b></li>
+<li><b>get Messages</b></li>
+<li><b>get Terms</b></li>
+<li><b>get stats</b></li>
+<li><b>get history</b></li>
 </ul>
 
-
-  Coffee
 
 #### Methods
 <ul>
