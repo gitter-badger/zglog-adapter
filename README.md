@@ -95,17 +95,9 @@ client.fields_return(fields, callback);
 <ul>
 <li>log Messages</li>
 <li>get Messages</li>
-<li>get Messages with specified fields</li>
-<li>get Messages based on the condition</li>
-<li>get Messages in specific time range</li>
 <li>get Terms</li>
-<li>get Terms based on the condition</li>
-<li>get Terms in specific time range</li>
 <li>get stats</li>
-<li>get stats based on the condition</li>
-<li>get stats in specific time range</li>
 <li>get history</li>
-<li>get history in specific interval</li>
 </ul>
 
 
