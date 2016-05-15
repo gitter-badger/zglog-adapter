@@ -85,6 +85,8 @@ client.log(//parameters)
 ```javascript
 //callback is a function with (err, data)
 client.messages(optinal_query, callback);
+//or
+client.fields_return(fields, callback);
 ```
 
 
