@@ -10,7 +10,6 @@
 [stars-url]:https://img.shields.io/github/stars/Emallates/zglog-adapter.svg?style=flat-square
 [downloads-image]: https://img.shields.io/npm/dm/zglog-adapter.svg?style=flat-square
 [downloads-url]: http://npm-stat.com/charts.html?package=zglog-adapter
-</br>
 [license-image]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
 [license-url]: https://raw.githubusercontent.com/Emallates/zglog-adapter/master/LICENSE
 
