@@ -14,8 +14,7 @@ function adapter(context, opts){
 		this.ibase = ibase;
 		this.obase = obase;
 		this.rbase = rbase;
-		// this.context._request = function(obj, callback){ console.log('adapter function override'); return callback(); }
-	}	
+	}
 };
 
 function validate(creds){
@@ -42,6 +41,7 @@ adapter.prototype.create = function(obj, callback){
 
 adapter.prototype.find = function(criteria, callback){ 
 	//next_task ---> test log and then search function(for first commit log will be included)
+	console.log(criteria);
 	obj.adopId = 1122; return callback(null, obj); 
 };
 adapter.prototype.update = function(obj, callback){ obj.adopId = 1122; return callback(null, obj); };
@@ -49,7 +49,7 @@ adapter.prototype.delete = function(obj, callback){ obj.adopId = 1122; return ca
 
 
 adapter.prototype.extend = function(optional){
-	var extend = require('./lib/extend.js')(this, optional);
+	var extend = require('./lib/extend')(this, optional);
 	for(key in optional) 
 		if(typeof optional[key] == 'function') 
 			extend[key] = optional[key];
