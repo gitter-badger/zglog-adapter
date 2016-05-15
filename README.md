@@ -68,16 +68,28 @@ var config = {
 ## Overview
 
 #### Features
-LOG MESSAGES</br>
-GET LOGGED MESSAGES</br>
-GET CREATED TERMS</br>
-GET CREATED CLASSES</br>
-GET HISTORY</br>
+log Messages</br>
+get Messages</br>
+get Messages with specified fields</br>
+get Messages based on the condition</br>
+get Messages in specific time range</br>
+get Terms</br>
+get Terms based on the condition</br>
+get Terms in specific time range</br>
+get stats</br>
+get stats based on the condition</br>
+get stats in specific time range</br>
+get history</br>
+get history in specific interval</br>
 
 #### Methods
  <b>register</b></br>
  <b>log</b></br>
  <b>find</b></br>
+ <b>fields_return</b></br>
+ <b>isSpecific_return</b></br>
+ <b>intime_return</b></br>
+ <b>history</b></br>
 
 > **Note**
 >
