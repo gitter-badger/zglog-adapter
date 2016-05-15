@@ -92,29 +92,35 @@ client.fields_return(fields, callback);
 ## Overview
 
 #### Features
-log Messages</br>
-get Messages</br>
-get Messages with specified fields</br>
-get Messages based on the condition</br>
-get Messages in specific time range</br>
-get Terms</br>
-get Terms based on the condition</br>
-get Terms in specific time range</br>
-get stats</br>
-get stats based on the condition</br>
-get stats in specific time range</br>
-get history</br>
-get history in specific interval</br>
+<ul>
+<li>log Messages</li>
+<li>get Messages</li>
+<li>get Messages with specified fields</li>
+<li>get Messages based on the condition</li>
+<li>get Messages in specific time range</li>
+<li>get Terms</li>
+<li>get Terms based on the condition</li>
+<li>get Terms in specific time range</li>
+<li>get stats</li>
+<li>get stats based on the condition</li>
+<li>get stats in specific time range</li>
+<li>get history</li>
+<li>get history in specific interval</li>
+</ul>
+
+
+  Coffee
 
 #### Methods
- <b>register</b></br>
- <b>log</b></br>
- <b>find</b></br>
- <b>fields_return</b></br>
- <b>isSpecific_return</b></br>
- <b>intime_return</b></br>
- <b>history</b></br>
-
+<ul>
+ <li>register</li>
+ <li>log</li>
+ <li>find</li>
+ <li>fields_return</li>
+ <li>isSpecific_return</li>
+ <li>intime_return</li>
+ <li>history</li>
+</ul>
 > **Note**
 >
 > advance functions will be included after a while, this will give you the overview  for >[enoa-client](https://github.com/Emallates/enoa-client) adapters and the functions related to the specific service.
