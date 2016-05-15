@@ -1,5 +1,5 @@
 # zglog-adapter
-[![Version][version-svg]][package-url] [![Build Status][travis-svg]][travis-url] [![License][license-image]][license-url]  [![Downloads][downloads-image]][downloads-url]
+[![Version][version-svg]][package-url] [![Build Status][travis-svg]][travis-url] [![License][license-image]][license-url]  [![Downloads][downloads-image]][downloads-url][![ISSUES][issues-open]][issues-open][![FORKS][forks-url]][forks-url][![FORKS][stars-url]][stars-url]
 
 [version-svg]: https://img.shields.io/npm/v/zglog-adapter.svg?style=flat-square
 [package-url]: https://npmjs.org/package/zglog-adapter
@@ -9,6 +9,9 @@
 [license-url]: LICENSE.txt
 [downloads-image]: https://img.shields.io/npm/dm/zglog-adapter.svg?style=flat-square
 [downloads-url]: http://npm-stat.com/charts.html?package=zglog-adapter
+[issues-open]:https://img.shields.io/github/issues/Emallates/zglog-adapter.svg
+[forks-url]:https://img.shields.io/github/forks/Emallates/zglog-adapter.svg
+[stars-url]:https://img.shields.io/github/stars/Emallates/zglog-adapter.svg
 
 zglog-adapter is just for experminetal purposes for [enoa-client](https://github.com/Emallates/enoa-client), you can log the http request, response and get the saved logged messages.
 
