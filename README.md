@@ -1,4 +1,18 @@
 # zglog-adapter
+[![Version][version-svg]][package-url]&nbsp;[![Build Status][travis-svg]][travis-url]</br>[![ISSUES][issues-url]][issues-url]&nbsp;[![FORKS][forks-url]][forks-url]&nbsp;[![STARS][stars-url]][stars-url]&nbsp;[![Downloads][downloads-image]][downloads-url]</br>[![License][license-image]][license-url]
+
+[version-svg]: https://img.shields.io/npm/v/zglog-adapter.svg?style=flat-square
+[package-url]: https://npmjs.org/package/zglog-adapter
+[travis-svg]: https://img.shields.io/travis/Emallates/zglog-adapter/master.svg?style=flat-square
+[travis-url]: https://api.travis-ci.org/Emallates/zglog-adapter.svg?branch=master
+[issues-url]:https://img.shields.io/github/issues/Emallates/zglog-adapter.svg?style=flat-square
+[forks-url]:https://img.shields.io/github/forks/Emallates/zglog-adapter.svg?style=flat-square
+[stars-url]:https://img.shields.io/github/stars/Emallates/zglog-adapter.svg?style=flat-square
+[downloads-image]: https://img.shields.io/npm/dm/zglog-adapter.svg?style=flat-square
+[downloads-url]: http://npm-stat.com/charts.html?package=zglog-adapter
+</br>
+[license-image]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
+[license-url]: https://raw.githubusercontent.com/Emallates/zglog-adapter/master/LICENSE
 
 
 zglog-adapter is just for experminetal purposes for [enoa-client](https://github.com/Emallates/enoa-client), you can log the http request, response and get the saved logged messages.
