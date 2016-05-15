@@ -53,15 +53,38 @@ zglog-adapter can be used with enoa-client, for more information on how to use e
 ####Example
 
 ```javascript
-var adapter = require('zglog-adapter');
 var config = {
-	host:'127.0.0.1', 
-	adapter:zgAdapter, 
+ collections:{
+   zglog:{
+	host:'192.168.0.1', 
+	adapter:require('zglog-adapter'), 
 	timeout:false, 
 	port:9000,
-	appId:'example_id',
-	apiKey:'example_key'
+	appId:'app_id',
+	apiKey:'app_key'
+   }
+ }
 };
+var client = require('enoa-client')(config);
+//client is initialized now
+```
+### zglog-adapter log
+
+####Example
+
+```javascript
+//express
+express_app.use(client.log());
+//normal use
+client.log(//parameters)
+```
+### zglog-adapter get messages
+
+####Example
+
+```javascript
+//callback is a function with (err, data)
+client.messages(optinal_query, callback);
 ```
 
 
