@@ -1,10 +1,10 @@
 {
   "name": "zglog-adapter",
-  "version": "0.0.1",
+  "version": "0.0.9",
   "description": "log http request responses and get the logged messages",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test"
+    "test": "test"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,9 @@
   },
   "homepage": "https://github.com/Emallates/zglog-adapter#readme",
   "dependencies": {
-    "request": "^2.72.0"
+    "mocha": "^2.4.5",
+    "request": "^2.72.0",
+    "should": "^8.3.1",
+    "type-util":"*"
   }
 }
