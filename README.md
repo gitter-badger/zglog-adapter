@@ -67,6 +67,12 @@ var config = {
 var client = require('enoa-client')(config);
 //client is initialized now
 ```
+> **Note**
+>
+> method chaining and functions like messages, history etc. will be implemnted soon
+>
+>
+
 ### zglog-adapter log
 
 ####Example
@@ -77,6 +83,44 @@ express_app.use(client.log());
 //normal use
 client.log(//parameters)
 ```
+### zglog-adapter find
+
+####Example
+
+```javascript
+client.find({select:['client_ip','headers'], where:{userid:'254'}, time:{from:'2014-04-04T0.00Z', to:'2014-04-04T0.00Z'}}, callback);
+```
+### zglog-adapter select
+
+####Example
+returns selected fields
+```javascript
+//Note: Chaining will be implemented soon 
+// e.g. client.select().where().time.range()
+client.select(['client_ip','headers'], callback);
+```
+### zglog-adapter where
+
+####Example
+returns values based on the specific condition or value existance
+```javascript
+//Note: Chaining will be implemented soon 
+// e.g. client.select().where().time.range()
+client.where(['userid','pid'], callback)
+// where useid and pid exists together
+client.where([{'userid':12},{'pid':954}], callback)
+client.where([{and:[{'userid':12},{'pid':954}]}], callback)
+client.where([{or:[{'userid':12},{'pid':954}]}], callback)
+```
+
+### zglog-adapter time
+
+####Example
+returns values based on the specified time range
+```javascript
+client.time({from:'', to:''}, callback)
+```
+
 ### zglog-adapter get messages
 
 ####Example

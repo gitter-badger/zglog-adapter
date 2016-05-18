@@ -41,8 +41,12 @@ adapter.prototype.create = function(obj, callback){
 
 adapter.prototype.find = function(criteria, callback){ 
 	//next_task ---> test log and then search function(for first commit log will be included)
-	console.log(criteria);
-	obj.adopId = 1122; return callback(null, obj); 
+	var _self = this;
+	var query = {};
+	query.select = _self.extend().select(criteria.select);
+	query.where = _self.extend().where(criteria.where);
+	query.time = _self.extend().time(criteria.time);
+	criteria.query = query; return callback(null, criteria); 
 };
 adapter.prototype.update = function(obj, callback){ obj.adopId = 1122; return callback(null, obj); };
 adapter.prototype.delete = function(obj, callback){ obj.adopId = 1122; return callback(null, obj); };
