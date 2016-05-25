@@ -3,13 +3,18 @@ var ibase = '/input';
 var obase = '/output';
 var rbase = '/gtV1.0';
 var request = require('request');
-function isArr(arr){ return Array.isArray(arr); }
+var _ = require('type-util');
+var extend = require('./lib/extend'); 
+var color = require('colors');
+var util = require('./lib/util');
+
+/*-------------------------CONSTRUCTOR--------------------------*/
 function adapter(context, opts){
-	if(validate(opts)){
+	if(util.validate(opts)){
 		this.context = context;
 		this.configs = opts;
 		this._request = request;
-		this.host = getHosts(opts);
+		this.host = util.getHosts(opts);
 		this.port = opts.port || 80;
 		this.ibase = ibase;
 		this.obase = obase;
@@ -17,68 +22,36 @@ function adapter(context, opts){
 	}
 };
 
-function validate(creds){
-	if(!creds.host && !creds.ip) throw new Error("host or ip undefined");
-	if(!creds.appId) throw new Error("appId IS REQUIRED");
-	if(!creds.apiKey) throw new Error("apiKey IS REQUIRED");
-	return true;	
-}
-function getHosts(creds){
-	if(creds.maxHost){
-		var hosts = [];
-		for(var i =0; i< creds.maxHost; i++ ) hosts.push((creds.protocol || "http") +"://"+(creds.host||creds.ip||'cdn.zglog.com')+(creds.port? (":"+creds.port) : ""));
-		return hosts;
-    }
-    return (creds.protocol || "http") +"://"+(creds.host||creds.ip||'cdn.zglog.com')+(creds.port? (":"+creds.port) : "");
-}
-
-
-
+/*-------------------------PUBLIC-PROTO--------------------------*/
 adapter.prototype.create = function(obj, callback){ 
 	obj.adopId = 'Zee';
 	return this._request.get(obj, callback);
 };
 
-adapter.prototype.find = function(criteria, callback){ 
-	//next_task ---> test log and then search function(for first commit log will be included)
+adapter.prototype.update = function(obj, callback){ 
+	obj.adopId = 1122; return callback(null, obj); 
+};
+adapter.prototype.delete = function(obj, callback){ 
+	obj.adopId = 1122; return callback(null, obj); 
+};
+adapter.prototype.extend = function(optional){
+	var ext = new extend(this, optional);
+	for(key in optional) ext[key] = (typeof optional[key] == 'function') ? optional[key] : undefined;
+    ext.find = find;
+    ext.exec = util.exec;
+    return ext;  
+};
+
+/*-------------------------PRIVATE-PROTO--------------------------*/
+function find(criteria, callback){
 	var _self = this;
 	var query = {};
-	query.select = _self.extend().select(criteria.select);
-	query.where = _self.extend().where(criteria.where);
-	query.time = _self.extend().time(criteria.time);
-	criteria.query = query; return callback(null, criteria); 
-};
-adapter.prototype.update = function(obj, callback){ obj.adopId = 1122; return callback(null, obj); };
-adapter.prototype.delete = function(obj, callback){ obj.adopId = 1122; return callback(null, obj); };
-
-
-adapter.prototype.extend = function(optional){
-	var extend = require('./lib/extend')(this, optional);
-	for(key in optional) 
-		if(typeof optional[key] == 'function') 
-			extend[key] = optional[key];
-    return extend;  
-};
-
-
-
-function request(obj, callback){
-	request(parser(obj), callback);
-};
-function parser(obj){
-  var finalRequest = {};
-  finalRequest.url = obj.params ? obj.url+obj.params : obj.url;
-  for(key in obj.opts){ finalRequest[key] = obj.opts[key];   }
-  finalRequest.method = obj.method;	
-  finalRequest.qs = obj.qs;
-  return bodyParser(finalRequest, obj);	
+	query = _self.select(criteria.select).where(criteria.where).time(criteria.time);
+	criteria.query = query; 
+	return _.isFunction(callback) ?  this.exec(callback) : this; 
 }
-function bodyParser(finalRequest, obj){
-  if(obj.method == "PUT" || obj.method == "POST") {
-  	if(obj.formData) finalRequest.formData = obj.formData;
-  	if(obj.multipart) finalRequest.multipart = obj.multipart;
-  	if(obj.form) finalRequest.form = obj.form;
-  	if(obj.body) finalRequest.body = obj.body;
-  }
-  return finalRequest;
-}
+function request(obj, callback){ request(util.parser(obj), callback); };
+
+
+
+

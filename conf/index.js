@@ -1,6 +1,10 @@
 //This Module is just a part
 var _ = require('data_parser');
 module.exports = obj = {
+	ERRORS : {
+		//[err][relation][subject][object type][this]
+		"CON":"[ECON_CONNECTION_REFUSED][FOR][REQUEST][QUERY]"
+	},
 	PUBLISHER : {
 		EXC : ['genders','mobile_codes','countries','states','pword'],
 		ENC : ['id','state','country']
