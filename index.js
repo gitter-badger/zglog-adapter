@@ -5,7 +5,6 @@ var rbase = '/gtV1.0';
 var request = require('request');
 var _ = require('type-util');
 var extend = require('./lib/extend'); 
-var color = require('colors');
 var util = require('./lib/util');
 
 /*-------------------------CONSTRUCTOR--------------------------*/
