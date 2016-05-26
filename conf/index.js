@@ -1,5 +1,5 @@
 //This Module is just a part
-var _ = require('data_parser');
+var _ = require('type-util');
 module.exports = obj = {
 	ERRORS : {
 		//[err][relation][subject][object type][this]
