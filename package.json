@@ -1,6 +1,6 @@
 {
   "name": "zglog-adapter",
-  "version": "1.0.02",
+  "version": "1.0.03",
   "description": "log http request responses and get the logged messages",
   "main": "index.js",
   "scripts": {
