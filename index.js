@@ -45,7 +45,7 @@ adapter.prototype.extend = function(optional){
 function find(criteria, callback){
 	var _self = this;
 	var query = {};
-	query = _self.select(criteria.select).where(criteria.where).time(criteria.time);
+	query = _self.select(criteria.select).where(criteria.where).time(criteria.time).range(criteria.range).page(criteria.page).limit(criteria.limit).type(criteria.type);
 	criteria.query = query; 
 	return _.isFunction(callback) ?  this.exec(callback) : this; 
 }
