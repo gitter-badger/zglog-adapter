@@ -15,7 +15,7 @@ module.exports = obj = {
 	//for Run time configurations
 	//CALLBACK CRITERIA ----> run time changeable
 	CB_CRITERIA  :{
-		l : {type:'boolean', valid: (v) => { return v === true || v === false ? v : true; }},
+		l : {type:'boolean', valid: function(v){ return v === true || v === false ? v : true; }},
 		f : {url:''},
 		sms:{number: '', rule:''},
         email:{email:'',rule:''},
