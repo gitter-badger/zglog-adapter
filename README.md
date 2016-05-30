@@ -1,4 +1,6 @@
 # zglog-adapter
+
+[![Join the chat at https://gitter.im/Emallates/zglog-adapter](https://badges.gitter.im/Emallates/zglog-adapter.svg)](https://gitter.im/Emallates/zglog-adapter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Version][version-svg]][package-url]&nbsp;[![Build Status][travis-svg]][travis-url]</br>[![ISSUES][issues-url]][issues-url]&nbsp;[![FORKS][forks-url]][forks-url]&nbsp;[![STARS][stars-url]][stars-url]&nbsp;[![Downloads][downloads-image]][downloads-url]</br>[![License][license-image]][license-url]
 
 [version-svg]: https://img.shields.io/npm/v/zglog-adapter.svg?style=flat-square
